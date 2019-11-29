@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>Welcome to Layers!</title>
+  <meta charset = "UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="p-3">
+    <!-- Navigation Bar -->
+  <div class="row">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <header>
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                <a  class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+          </ul>
+      </header>
+    </nav>
+  </div>
+
+    <!--Main Title-->
+  <div class= "container-fluid">
+    <div class="row justify-content-left mt-5">
+      <div class="col-lg-2 justify-content-left">
+        <h2 id="Title">Layer 1</h2>
+      </div>
+      <div class="col-lg-1">
+        <img src="../Assets/Tab_EarthScienceBorder.png">
+      </div>
+    </div>
+
+    <div class="row justify-content-left">
+      <div class="col-lg-1 container">
+            <button type="button" class="tab" id= "student1layer1page1" onclick="window.location.href='student1Layer1Page1.html'">
+                <img class="tab" src="../Assets/Layer1_Paris.png">
+            </button>
+          <img src="../Assets/Layer2_Yellow.png">
+          <img src="../Assets/Layer3_Yellow.png">
+        </div>
+        <div class="row">
+          <img src="../Assets/Layer1_Paris.png">
+        </div>
+        <div class="row">
+          <img src="../Assets/Layer1_Paris.png">
+        </div>
+      </div>
+        <!--Layer 1 Instructions-->
+      <div class= "col-lg-11 container">
+        <p>
+            Now proceed through Questions 1, 2, and 3 and respond to the question prompts. 
+            As you read through each question, you should be looking at that same corresponding Layer on your student cards.
+            Learning this information about your students, what assignment/activity would you assign to these students and why?
+        </p>
+        
+
+        <!--Enact Question 1 Response-->
+        <script src="layer1.js"></script>
+        <form > 
+          <div class="form-group">
+            <label for="Layer1Response">Type your response here</label>
+            <textarea class="form-control" id="Layer1Response" rows="10"></textarea>
+            <input type="submit" value="Submit" class="btn btn-outline-light text-dark mt-2" onclick="writeCookie();">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+
+
+    <!--Next Button-->
+    <div class="row justify-content-end">
+        <button type="button" class="btn" onclick="window.location.href='#'">
+            <img class="arrow" src="Arrow.png">
+        </button>
+    </div>
+  </div>
+
+    <!--Footer-->
+    <footer class="fixed-bottom pl-3">
+        <p>Layers was made by the Teaching Systems Lab at the Massachusetts Institute of Technology</p>
+    </footer>
+</body>
+</html>

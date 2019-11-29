@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>Layers: Enact</title>
+  <meta charset = "UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="p-3">
+
+  <!--Navigation Bar-->
+  <div class="row">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <header>
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a  class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+              </ul>
+          </header>
+        </nav>
+      </div>
+
+    <!--Main Title-->
+    <div class= "container-fluid">
+        <div class="row justify-content-left mt-5">
+            <h2 id="Title">Student Cards</h2>
+        </div>
+
+    <!--Draw Card Instructions-->
+        <div class="row">
+            <p id="Body">
+                Now, choose three student cards from the student deck:
+            </p>
+            </div>
+
+
+        <div class="row justify-content-around">
+            <script src="randomStudent.js"></script>
+            <img id="student1" src="../StudentCards/questionMark.png" class="image-responsive"/>
+            <img id="student2" src="../StudentCards/questionMark.png" class="image-responsive"/>
+            <img id="student3" src="../StudentCards/questionMark.png" class="image-responsive"/>
+        </div>
+    <!--Draw a Student Card-->
+    <div class="row container-fluid justify-content-center mt-3">
+        <button type="button" class=" mb-5 btn btn-outline-light text-dark" id="studentDraw" onclick="drawStudents();">Draw Your Student Cards</button>
+        <!--Next Button-->
+        <button type="button" class="btn" id= "next" onclick="window.location.href='Layer1_Home.html'">
+            <img id ='studentNext' class="arrow" src="Arrow.png" style="visibility: hidden;">
+        </button>
+    </div>
+  </div>
+
+
+  <!--Footer-->
+  <footer class="fixed-bottom pl-3">
+      <p>Layers was made by the Teaching Systems Lab at the Massachusetts Institute of Technology</p>
+  </footer>
+</body>
+</html>
