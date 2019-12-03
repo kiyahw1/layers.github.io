@@ -5,7 +5,7 @@
   <meta charset = "UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="../_sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
 </head>
 
@@ -17,7 +17,7 @@
       <header>
           <ul class="navbar-nav">
               <li class="nav-item">
-                <a  class="nav-link" href="index.html">Home</a>
+                <a  class="nav-link" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -35,18 +35,37 @@
 
     <!--Draw Card Instructions-->
         <div class="row">
-            <div class="col-lg-12"></div>
+            <div class="col-lg-12">
               <p id="Body">
                 First, choose a “Subject” card from the deck of Lesson/Subject topics:
               </p>
             </div>
+        </div>
+
+    <!--Displays Subject Card-->
+      <div class='row justify-content-center'>
+        <script src="randomSubject.js"></script>
+        <script src=flipCard.js></script>
+        <img id="subjectCard" src="../_assets/StudentCards/questionMark.png" class="image-responsive">
+      </div>
 
 
     <!--Draw a Subject Card-->
-    <div class="row justify-content-center mt-5">
-        <button type="button" class="start btn btn-outline-light text-dark" id="subjectDraw" onclick="window.location.href='subjectCard.html'">Draw a Subject Card</button>
+    <div class="row container-fluid justify-content-center mt-3">
+      <button type="button" class=" mb-5 btn btn-outline-light text-dark" id="subjectDraw" onclick="drawSubject();">Draw Your Subject Card</button>
     </div>
-  </div>
+
+    
+    <!--Flip Button and Next Button-->
+    <div class="row mb-5 container-fluid">
+      <button type="button" class="btn justify-self-center" onclick="imageChange()" id="flip">
+          <img  id='arrowFlip' class="flipArrow" src="../_assets/flipArrow.png" style="visibility: hidden;">
+        </button>
+      <button type="button" class="btn" id= "next" onclick="window.location.href='students.html'">
+          <img id='subjectNext' class="arrow" src="../_assets/Arrow.png" style="visibility: hidden;">
+      </button>
+    </div>
+</div>
 
 
   <!--Footer-->
