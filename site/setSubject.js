@@ -1,5 +1,5 @@
 function getSubject() {
-    var subject = cname + "=";
+    var name = 'subject' + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
     for(var i = 0; i <ca.length; i++) {
@@ -7,8 +7,8 @@ function getSubject() {
       while (c.charAt(0) == ' ') {
         c = c.substring(1);
       }
-      if (c.indexOf(subject) == 0) {
-        document.getElementById('subject').src="../assets/tabs/Tab-" + c.substring(subject.length, c.length);
+      if (c.indexOf(name) == 0) {
+        document.getElementById('subject').src="../assets/tabs/Tab-" + c.substring(name.length, c.length);
       }
     }
     return "";
