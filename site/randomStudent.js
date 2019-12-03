@@ -52,4 +52,5 @@ function drawStudents(){
     document.getElementById("studentDraw").value = 'Redraw Student Cards';
 
    let cook=document.cookie;
+   alert(cook)
 }

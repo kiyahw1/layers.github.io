@@ -8,5 +8,4 @@ function writeCookie(){
     alert(cookievalue);
     document.cookie = "entry.280846240=" + cookievalue +"; path/";
     //document.write ("Setting Cookies: " + "entry.280846240=" + cookievalue);
-    alert(cookievalue);
 }
