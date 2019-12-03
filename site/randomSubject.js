@@ -8,7 +8,7 @@ function drawSubject(){
     
     randomCard=subjectArray[Math.floor(Math.random()*subjectArray.length)];
 
-    document.getElementById("subjectCard").src= "../_assets/SubjectCards/"+randomCard;
+    document.getElementById("subjectCard").src= "../assets/SubjectCards/"+randomCard;
 
     //Updates instructions, next button, and draw student button
     document.getElementById("Body").innerHTML="This is your subject card. If you are not familiar with your topics, flip the card to read some examples. You will have access to this card as you create your activites. ";
