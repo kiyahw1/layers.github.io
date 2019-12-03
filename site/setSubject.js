@@ -8,7 +8,7 @@ function getSubject() {
         c = c.substring(1);
       }
       if (c.indexOf(name) == 0) {
-        document.getElementById('subject').src="../assets/tabs/Tab-" + c.substring(name.length, c.length);
+        document.getElementById('subject').src="../assets/tabs/Tab_" + c.substring(name.length, c.length);
       }
     }
     return "";
