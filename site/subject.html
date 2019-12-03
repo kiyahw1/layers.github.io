@@ -45,7 +45,6 @@
     <!--Displays Subject Card-->
       <div class='row justify-content-center'>
         <script src="randomSubject.js"></script>
-        <script src=flipCard.js></script>
         <img id="subjectCard" src="../assets/StudentCards/questionMark.png" class="image-responsive">
       </div>
 
@@ -58,7 +57,8 @@
     
     <!--Flip Button and Next Button-->
     <div class="row mb-5 container-fluid">
-      <button type="button" class="btn justify-self-center" onclick="imageChange()" id="flip">
+      <script src=flipCard.js></script>
+      <button type="button" class="btn justify-self-center" onclick="imageChange();" id="flip">
           <img  id='arrowFlip' class="flipArrow" src="../assets/flipArrow.png" style="visibility: hidden;">
         </button>
       <button type="button" class="btn" id= "next" onclick="window.location.href='students.html'">
