@@ -48,12 +48,18 @@
             <img id="student3" src="../assets/StudentCards/questionMark.png" class="image-responsive"/>
         </div>
     <!--Draw a Student Card-->
-    <div class="row container-fluid justify-content-center mt-3">
-        <button type="button" class=" mb-5 btn btn-outline-light text-dark" id="studentDraw" onclick="drawStudents();">Draw Your Student Cards</button>
-        <!--Next Button-->
-        <button type="button" class="btn" id= "next" onclick="window.location.href='Layer1_Home.html'">
-            <img id ='studentNext' class="arrow" src="../assets/Arrow.png" style="visibility: hidden;">
+    <div class="row container-fluid mt-3">
+      <div style="position:absolute; justify-self: center;">
+        <button type="button" class=" mb-5 btn btn-outline-light text-dark" id="studentDraw" onclick="drawStudents();">
+          Draw Your Student Cards
         </button>
+      </div>
+        <!--Next Button-->
+      <div style="justify-self: right;">
+        <button type="button" class="btn" id= "next" onclick="window.location.href='Layer1_Home.html'" style="position: relative; justify-self: end;">
+            <img id ='studentNext' class="arrow" src="../assets/Arrow.png" style="visibility: visible;">
+        </button>
+      </div>
     </div>
   </div>
 

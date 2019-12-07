@@ -5,13 +5,11 @@
   <meta charset = "UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet"> 
-  <!--Draws Subject Card from Deck-->
-  <script src=randomSubject.js></script>   
+  <link rel="stylesheet" type="text/css" href="sass/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="p-3" onload = "drawSubject();">
+<body class="p-3" style='background-image: url("backgrounds/homepage1.jpg"); background-size: 100%;'>
 
   <!--Navigation Bar-->
   <div class="row">
@@ -19,7 +17,7 @@
       <header>
           <ul class="navbar-nav">
               <li class="nav-item">
-                <a  class="nav-link" href="index.html">Home</a>
+                <a  class="nav-link" href="https://kiyahw1.github.io/layers.github.io/">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -29,45 +27,47 @@
     </nav>
   </div>
 
-    <!--Main Title-->
-    <div class= "container-fluid">
+  <!--Layers Main Title-->
+  <div class= "container-fluid">
         <div class="row justify-content-left mt-5">
-            <h2 id="Title">Subject Card</h2>
+            <h2 id="Title">Student Cards</h2>
         </div>
 
-    <!--Subject Card Instructions-->
+    <!--Draw Card Instructions-->
         <div class="row">
-            <p id="Body">
-            This is your subject card. 
-            If you are not familiar with your topics, flip the card to read some examples. 
-            You will have access to this card as you create your activites.
-            </p>
+              <p id="Body">
+                First, choose a Subject card from the deck of Lesson/Subject topics:
+              </p>
         </div>
 
+    <!--Displays Subject Card-->
+      <div class='row justify-content-center'>
+        <script src="subject.js"></script>
+        <img id="subjectCard" src="../assets/StudentCards/questionMark.png" class="image-responsive" style="height:500px;">
+      </div>
 
-    <!--Subject Card Display-->
-        <div class="row justify-content-center">
-            <!--Flips Card-->
-            <script src=flipCard.js></script>
-            <img id="subject" src="../SubjectCards/earthScience_Front.png" class="img-responsive "/>
-        </div>
-        <div class="row mb-5 container-fluid">
-            <button type="button" class="btn justify-self-center" onclick="imageChange()" id="flip">
-              <img class="flipArrow" src="../Assets/flipArrow.png">
-            </button>
-       
-        <!--Next Button-->
-            <button type="button" class="btn" id= "next" onclick="window.location.href='students.html'">
-                <img class="arrow" src="Arrow.png">
-            </button>
-      
-        </div>
+
+    <!--Draw a Subject Card-->
+    <div class="row container-fluid justify-content-center mt-3">
+      <button type="button" class=" mb-5 btn btn-outline-light text-dark" id="subjectDraw" onclick="drawSubject();">Draw Your Subject Card</button>
     </div>
 
+    
+    <!--Flip Button and Next Button-->
+    <div class="row mb-5 container-fluid">
+      <button type="button" class="btn justify-self-center" onclick="imageChange();" id="flip">
+          <img  id='arrowFlip' class="flipArrow" src="../assets/flipArrow.png" style="visibility: hidden;">
+        </button>
+      <button type="button" class="btn" id= "next" onclick="window.location.href='students.html'">
+          <img id='subjectNext' class="arrow" src="../assets/Arrow.png" style="visibility:">
+      </button>
+    </div>
+</div>
 
   <!--Footer-->
   <footer class="fixed-bottom pl-3">
-      <p>Layers was made by the Teaching Systems Lab at the Massachusetts Institute of Technology</p>
-  </footer>
+    <p>Layers was made by the Teaching Systems Lab at the Massachusetts Institute of Technology</p>
+</footer>
 </body>
 </html>
+

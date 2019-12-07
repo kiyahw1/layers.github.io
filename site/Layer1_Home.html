@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="p-3" onload="getSubject();">
+<body onload="getSubject();">
     <!-- Navigation Bar -->
   <div class="row">
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -28,33 +28,32 @@
 
     <!--Main Title-->
   <div class= "container-fluid">
-    <div class="row justify-content-left mt-5">
-      <div class="col-lg-2 justify-content-left">
+    <div class="row justify-content-left">
+      <div class="col-lg-2 mt-5 justify-content-left p-3">
         <h2 id="Title">Layer 1</h2>
       </div>
-      <div class="col-lg-1">
-        <script src='setSubject.js'></script>
-        <img id= 'subject' src="../assets/tabs/Tab_EarthScience.png">
+      <div class="col-lg-1" style="margin-top: 37px">
+        <script src='subject.js'></script>
+        <img id= 'subject' src="../assets/tabs/Tab_earthScienceBorder.png" style="width: 200px">
       </div>
     </div>
 
     <div class="row justify-content-left">
       <div class="col-lg-2 container">
-            <button type="button" class="tab" id= "student1layer1page1" onclick="window.location.href='student1Layer1Page1.html'">
-                <img class="tab" src="../Assets/Layer1_Paris.png">
-            </button>
-          <img src="../Assets/Layer2_Yellow.png">
-          <img src="../Assets/Layer3_Yellow.png">
+        <div class="row">
+          <img class="tab" src="../assets/tabs/Layer1_Paris.png" id= "student1layer1page1" onclick="window.location.href='student1Layer1Page1.html'" style="height:200px">
+          <img src="../assets/tabs/Layer2_Yellow.png" style="height:200px">
+          <img src="../assets/tabs/Layer3_Yellow.png" style="height:200px">
         </div>
         <div class="row">
-          <img src="../Assets/Layer1_Paris.png">
+          <img src="../assets/tabs/Layer1_Paris.png" style="height:200px">
         </div>
         <div class="row">
-          <img src="../Assets/Layer1_Paris.png">
+          <img src="../assets/tabs/Layer1_Paris.png" style="height:200px">
         </div>
       </div>
         <!--Layer 1 Instructions-->
-      <div class= "col-lg-11 container">
+      <div class= "col-lg-10 container">
         <p>
             Now proceed through Questions 1, 2, and 3 and respond to the question prompts. 
             As you read through each question, you should be looking at that same corresponding Layer on your student cards.
