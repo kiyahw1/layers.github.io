@@ -18,7 +18,5 @@ function drawSubject(){
 
     let cookievalue = randomCard + ";";
     document.cookie = "subject=" + cookievalue +"; path/";
-    //document.write ("Setting Cookies: " + "entry.1814210675=" + cookievalue);
-    alert(cookievalue)
 }
 

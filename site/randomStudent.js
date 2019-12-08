@@ -49,9 +49,10 @@ function drawStudents(){
     //Updates instructions, next button, and draw student button
     document.getElementById("Body").innerHTML="These are your focal students for this round. Each student card has 3 layers, with Layer 1 starting on the top as the shortest layer, and Layer 3 as the longest layer at the bottom.";
     document.getElementById('studentNext').style.visibility = 'visible';
-    let cook=document.cookie;
-    alert(cook)
-}
+
     document.getElementById("studentDraw").value = 'Redraw Student Cards';
+
+}
+    
 
    
