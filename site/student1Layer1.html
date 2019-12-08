@@ -5,11 +5,12 @@
   <meta charset = "UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+  <script src="layer1Students.js"></script>
 </head>
 
-<body class="p-3">
+<body onload="getStudent1Layer1();">
     <!-- Navigation Bar -->
   <div class="row">
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -26,30 +27,30 @@
     </nav>
   </div>
 
-    <!--Main Title-->
-  <div class= "container-fluid">
-    <div class="row justify-content-left mt-5">
-        <h2 id="Title">Student 1 Layer 1</h2>
+  <!--Back Arrow-->
+  <div class="row justify-content-left mt-5 ml-3">
+    <button type="button" class="btn" onclick="window.location.href='Layer1_Home.html'" style= 'width:100px'>
+      <img id='subjectNext' src="../assets/backArrow.png" style= 'width:100px'>
+    </button>
+  </div>
+
+  <!--Student Card-->
+  <div class="row container-fluid ml-0 p-3">
+    <div class="col-lg-3">
+      <img src="../assets/StudentCards/Siobhan.png" id="s1l1" style="height: 600px">
     </div>
+    <!--Enact Question 1 Response-->
+    <div class="col-lg-9">
+        <div class="form-group">
+          <label for="Layer1Response">Type your response here</label>
+          <textarea class="form-control" id="Layer1Response" rows="20"  ></textarea>
+          <input type="submit" value="Submit" class="btn btn-outline-light text-dark mt-2" onclick="writeCookie();">
+        </div>
+      </form>
 
-    <!--Participant Response Form-->
-    <form action="/anticipate.php"> 
-      <div class="form-group">
-        <label for="AnticipateParticipantResponse">Type your response here</label>
-        <textarea class="form-control" id="AnticipateParticipantResponse" rows="10"></textarea>
-        <input type="submit" value="Submit" class="btn btn-outline-light text-dark mt-2">
-      </div>
-    </form>
-
-
-
-    <!--Next Button-->
-    <div class="row justify-content-end">
-        <button type="button" class="btn" onclick="window.location.href='welcome.html'">
-            <img class="arrow" src="Arrow.png">
-        </button>
     </div>
   </div>
+
 
     <!--Footer-->
     <footer class="fixed-bottom pl-3">
