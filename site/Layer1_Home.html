@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+  <script src='layer1.js'></script>
 </head>
 
-<body onload="getSubjectTab();">
+<body onload="getSubjectTab(); getStudentTabs();">
     <!-- Navigation Bar -->
   <div class="row">
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -33,23 +34,24 @@
         <h2 id="Title">Layer 1</h2>
       </div>
       <div class="col-lg-1" style="margin-top: 40px">
-        <script src='subject.js'></script>
-        <img id= 'subject' src="../assets/tabs/Tab_EarthScience_Front.png" onclick= "window.location.href='subjectCard.html'" style="width: 200px">
+        <button onclick= "window.location.href='subjectCard.html'" style="width: 200px"></button>
+          <img id= 'subject' src="../assets/tabs/Tab_EarthScience_Front.png">
+        </button>
       </div>
     </div>
 
     <div class="row justify-content-left">
       <div class="col-lg-2 container">
         <div class="row">
-          <img class="tab" src="../assets/tabs/Layer1_Paris.png" id= "student1layer1page1" onclick="window.location.href='student1Layer1Page1.html'" style="height:200px">
+          <img class="tab" src="../assets/tabs/Layer1_Paris.png" id= "student1layer1" onclick="window.location.href='student1Layer1Page1.html'" style="height:200px">
           <img src="../assets/tabs/Layer2_Yellow.png" style="height:200px">
           <img src="../assets/tabs/Layer3_Yellow.png" style="height:200px">
         </div>
         <div class="row">
-          <img src="../assets/tabs/Layer1_Paris.png" style="height:200px">
+          <img src="../assets/tabs/Layer1_Paris.png" style="height:200px" id="student2layer1">
         </div>
         <div class="row">
-          <img src="../assets/tabs/Layer1_Paris.png" style="height:200px">
+          <img src="../assets/tabs/Layer1_Paris.png" style="height:200px" id=student3layer1>
         </div>
       </div>
         <!--Layer 1 Instructions-->
