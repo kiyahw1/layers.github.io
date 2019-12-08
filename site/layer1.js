@@ -1,7 +1,7 @@
 function getStudentTabs() {
 
     //Sets Student 1 Tab
-    var name = 'student1_' + "=";
+    var name = 'student_1' + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
     for(var i = 0; i <ca.length; i++) {
@@ -47,7 +47,7 @@ function getStudentTabs() {
 
 
 
-  
+
 //Gets the subject tab from cookie and sets the tab image on layer home
 function getSubjectTab() {
     var name = 'subject' + "=";
