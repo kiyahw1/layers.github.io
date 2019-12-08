@@ -5,11 +5,12 @@
   <meta charset = "UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="sass/style.css" />
+  <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+  <script src="subjectCard.js"></script>
 </head>
 
-<body class="p-3" style='background-image: url("backgrounds/homepage1.jpg"); background-size: 100%;'>
+<body class="p-3" style='background-image: url("backgrounds/homepage1.jpg"); background-size: 100%;' onload="getSubjectCard();">
 
   <!--Navigation Bar-->
   <div class="row">
@@ -27,42 +28,26 @@
     </nav>
   </div>
 
-  <!--Layers Main Title-->
-  <div class= "container-fluid">
-        <div class="row justify-content-left mt-5">
-            <h2 id="Title">Student Cards</h2>
-        </div>
+  <!--Back Arrow-->
+  <div class="row justify-content-left mt-5">
+    <button type="button" class="btn" onclick="window.location.href='Layer1_Home.html'" style= 'width:300px'>
+        <img id='subjectNext' src="../assets/backArrow.png">
+    </button>
+  </div>
 
-    <!--Draw Card Instructions-->
-        <div class="row">
-              <p id="Body">
-                First, choose a Subject card from the deck of Lesson/Subject topics:
-              </p>
-        </div>
-
-    <!--Displays Subject Card-->
-      <div class='row justify-content-center'>
-        <script src="subject.js"></script>
-        <img id="subjectCard" src="../assets/StudentCards/questionMark.png" class="image-responsive" style="height:500px;">
-      </div>
-
-
-    <!--Draw a Subject Card-->
-    <div class="row container-fluid justify-content-center mt-3">
-      <button type="button" class=" mb-5 btn btn-outline-light text-dark" id="subjectDraw" onclick="drawSubject();">Draw Your Subject Card</button>
-    </div>
+  <!--Displays Subject Card-->
+  <div class='row justify-content-center'>
+    <img id="subjectCard" src="../assets/StudentCards/questionMark.png" class="image-responsive" style="height:500px;">
+  </div>
 
     
     <!--Flip Button and Next Button-->
-    <div class="row mb-5 container-fluid">
-      <button type="button" class="btn justify-self-center" onclick="imageChange();" id="flip">
-          <img  id='arrowFlip' class="flipArrow" src="../assets/flipArrow.png" style="visibility: hidden;">
-        </button>
-      <button type="button" class="btn" id= "next" onclick="window.location.href='students.html'">
-          <img id='subjectNext' class="arrow" src="../assets/Arrow.png" style="visibility:">
+    <div class="row mb-5 container-fluid justify-content-center">
+      <button type="button" class="btn" onclick="imageChange();" id="flip">
+        <img  id='arrowFlip' class="flipArrow" src="../assets/flipArrow.png">
       </button>
+      
     </div>
-</div>
 
   <!--Footer-->
   <footer class="fixed-bottom pl-3">

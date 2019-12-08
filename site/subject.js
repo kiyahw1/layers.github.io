@@ -1,3 +1,4 @@
+//Draws subject card from the deck and sets the subject cookie
 function drawSubject(){
   let subjectArray = new Array('History_Front.png', 
   'earthScience_Front.png',
@@ -22,7 +23,10 @@ function drawSubject(){
   alert(cookievalue)
 }
 
-function getSubject() {
+
+
+//Gets the subject tab from cookie and sets the tab image on layer home
+function getSubjectTab() {
     var name = 'subject' + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
@@ -38,6 +42,11 @@ function getSubject() {
     return "";
   }
 
+
+
+
+
+//Changes the subject card image so the card flips
 function imageChange() {
   let fullname = document.getElementById("subjectCard").src;
   let filename = fullname.substring(fullname.lastIndexOf('/'),fullname.length);
@@ -48,6 +57,10 @@ function imageChange() {
       document.getElementById("subjectCard").src= "../assets/SubjectCards/"+filename.replace("_Back.png","_Front.png");
   }
 
+
+
+
+// Gets the subject card image from the 
 function getSubjectCard() {
   var name = 'subject' + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
