@@ -8,7 +8,7 @@ function getStudent1Layer1(){
         c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
-        document.getElementById('s1l1').src="../assets/" + c.substring(name.length, c.length);
+        document.getElementById('s1l1').src="../assets/StudentCards/" + c.substring(name.length, c.length);
     }
     }
 }
