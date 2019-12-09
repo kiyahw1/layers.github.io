@@ -19,7 +19,7 @@ function getSubjectCard() {
 
 
 //Changes the subject card image so the card flips
-function imageChange() {
+/*function imageChange() {
     let fullname = document.getElementById("subjectCard").src;
     let filename = fullname.substring(fullname.lastIndexOf('/'),fullname.length);
     let frontback = fullname.substring(fullname.lastIndexOf("_"),fullname.length);
@@ -28,4 +28,4 @@ function imageChange() {
     } else 
         document.getElementById("subjectCard").src= "../assets/SubjectCards/"+filename.replace("_Back.png","_Front.png");
     }
-
+*/
