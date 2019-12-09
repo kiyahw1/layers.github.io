@@ -1,5 +1,4 @@
 function getSubjectCard() {
-    alert("hi");
     var name = 'subject' + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
@@ -9,7 +8,6 @@ function getSubjectCard() {
         c = c.substring(1);
       }
 
-      alert(c.substring(name.length, c.length));
       if (c.indexOf(name) == 0) {
         document.getElementById('subjectCard').src="../assets/SubjectCards/" + c.substring(name.length, c.length);
       }
@@ -17,9 +15,7 @@ function getSubjectCard() {
     return "";
   }
 
-
-//Changes the subject card image so the card flips
-/*function imageChange() {
+function imageChange() {
     let fullname = document.getElementById("subjectCard").src;
     let filename = fullname.substring(fullname.lastIndexOf('/'),fullname.length);
     let frontback = fullname.substring(fullname.lastIndexOf("_"),fullname.length);
@@ -28,4 +24,3 @@ function getSubjectCard() {
     } else 
         document.getElementById("subjectCard").src= "../assets/SubjectCards/"+filename.replace("_Back.png","_Front.png");
     }
-*/
