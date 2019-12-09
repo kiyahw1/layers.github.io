@@ -1,4 +1,5 @@
 function getSubjectCard() {
+    alert("hi");
     var name = 'subject' + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
@@ -28,4 +29,3 @@ function imageChange() {
         document.getElementById("subjectCard").src= "../assets/SubjectCards/"+filename.replace("_Back.png","_Front.png");
     }
 
-}
