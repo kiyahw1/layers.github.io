@@ -86,6 +86,8 @@ function getStudentTabs() {
       }
     }
 
+    alert("../assets/tabs/Layer2_" + c.substring(name.length, c.length)+".png")
+
     return "";
 
   }
