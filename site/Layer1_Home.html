@@ -35,8 +35,8 @@
       </div>
       <!--Subject Card Tab-->
       <div class="col-lg-1" style="margin-top: 38px">
-        <button type="button" class="btn" onclick= "window.location.href='subjectCard.html'">
-          <img id= 'subject' src="../assets/tabs/Tab_earthScience_Front.png" style="width: 300px;">
+        <button type="button" class="btn" onclick= "window.location.href='subjectCard.html'; responseCookie();">
+          <img id= 'subject' src="#" style="width: 300px;">
         </button>
       </div>
     </div>
@@ -45,17 +45,17 @@
     <div class="row justify-content-left">
       <div class="col-lg-2 container">
         <div class="row"> <!--Student 1-->
-          <button type="button" class="btn" onclick="window.location.href='student1Layer1.html'">
+          <button type="button" class="btn" onclick="window.location.href='student1Layer1.html'; responseCookie();">
             <img src="#" id= "student1layer1" style="height:200px;">
           </button>
         </div>
         <div class="row"> <!--Student 2-->
-          <button type="button" class="btn" onclick="window.location.href='student2Layer1.html'">
+          <button type="button" class="btn" onclick="window.location.href='student2Layer1.html';responseCookie();">
               <img src="#" style="height:200px" id="student2layer1">
           </button>
         </div>
         <div class="row"> <!--Student 3-->
-          <button type="button" class="btn" onclick="window.location.href='student3Layer1.html'">
+          <button type="button" class="btn" onclick="window.location.href='student3Layer1.html'; responseCookie();">
             <img src="#" style="height:200px" id=student3layer1>
           </button>
         </div>
@@ -71,12 +71,11 @@
         
 
         <!--Enact Question 1 Response-->
-        <script src="layer1.js"></script>
         <form > 
           <div class="form-group">
             <label for="Layer1Response">Type your response here</label>
             <textarea class="form-control" id="Layer1Response" rows="18"></textarea>
-            <input type="submit" value="Submit" class="btn btn-outline-light text-dark mt-2" onclick="writeCookie();">
+            <input type="submit" value="Submit" class="btn btn-outline-light text-dark mt-2" onclick="responseCookie();">
           </div>
         </form>
       </div>

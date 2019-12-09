@@ -25,3 +25,5 @@ function imageChange() {
     } else 
         document.getElementById("subjectCard").src= "../assets/SubjectCards/"+filename.replace("_Back.png","_Front.png");
     }
+
+}

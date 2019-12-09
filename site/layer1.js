@@ -64,3 +64,29 @@ function getSubjectTab() {
     }
     return "";
   }
+
+
+
+function responseCookie() {
+  response=document.getElementById('Layer1Response').value;
+  cookievalue = response+ ";";
+  document.cookie = "layer_1=" + cookievalue +"; path/";
+
+  alert(cookievalue);
+}
+
+function getResponse() {
+  var name = 'layer_1' + "=";
+      var decodedCookie = decodeURIComponent(document.cookie);
+      var ca = decodedCookie.split(';');
+      for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+          document.getElementById('Layer1Response').value= c.substring(name.length, c.length);
+      }
+  }
+  return "";
+}
