@@ -85,9 +85,6 @@ function getStudentTabs() {
         document.getElementById('student3layer2').src="../assets/tabs/Layer2_" + c.substring(name.length, c.length)+".png";
       }
     }
-
-    alert("../assets/tabs/Layer2_" + c.substring(name.length, c.length)+".png")
-
     return "";
 
   }
