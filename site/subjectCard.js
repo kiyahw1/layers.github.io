@@ -7,6 +7,8 @@ function getSubjectCard() {
       while (c.charAt(0) == ' ') {
         c = c.substring(1);
       }
+
+      alert(c.substring(name.length, c.length));
       if (c.indexOf(name) == 0) {
         document.getElementById('subjectCard').src="../assets/SubjectCards/" + c.substring(name.length, c.length);
       }
