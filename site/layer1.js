@@ -71,6 +71,7 @@ function responseCookie() {
   response=document.getElementById('Layer1Response').value;
   cookievalue = response+ ";";
   document.cookie = "layer_1=" + cookievalue +"; path/";
+  //document.getElementById('Layer1Response').value=response;
 
   alert(cookievalue);
 }
