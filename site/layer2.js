@@ -1,6 +1,6 @@
 function getStudentTabs() {
 
-    //Sets Student 1 Tab
+    //Sets Student 1 Tab 1
     var name = 'student_1' + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
@@ -14,7 +14,21 @@ function getStudentTabs() {
       }
     }
 
-    //Sets Student 2 Tab
+    //Sets Student 1 Tab 2
+    var name = 'color1' + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        document.getElementById('student1layer2').src="../assets/tabs/Layer2_" + c.substring(name.length, c.length)+".png";
+      }
+    }
+
+    //Sets Student 2 Tabm1
     var name = 'student_2' + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
@@ -28,7 +42,22 @@ function getStudentTabs() {
       }
     }
 
-    //Sets Student 3 Tab
+    //Sets Student 2 Tab 2
+    var name = 'color2' + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        document.getElementById('student2layer2').src="../assets/tabs/Layer2_" + c.substring(name.length, c.length)+".png";
+      }
+    }
+
+
+    //Sets Student 3 Tab 1
     var name = 'student_3' + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
@@ -41,7 +70,24 @@ function getStudentTabs() {
         document.getElementById('student3layer1').src="../assets/tabs/Layer1_" + c.substring(name.length, c.length);
       }
     }
+
+
+    //Sets Student 3 Tab 2
+    var name = 'color3' + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        document.getElementById('student3layer2').src="../assets/tabs/Layer2_" + c.substring(name.length, c.length)+".png";
+      }
+    }
+
     return "";
+
   }
 
 

@@ -98,7 +98,6 @@ function drawStudents(){
 
     document.getElementById("studentDraw").value = 'Redraw Student Cards';
 
-    alert(document.cookie);
 }
     
 
