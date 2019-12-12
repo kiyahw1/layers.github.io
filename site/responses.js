@@ -1,5 +1,4 @@
 function getResponse() {
-    alert("hi");
     var name = 'layer_1' + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
         var ca = decodedCookie.split(';');
@@ -12,6 +11,5 @@ function getResponse() {
             document.getElementById('Body').innerHTML= c.substring(name.length, c.length);
         }
     }
-    alert("hi");
     return "";
   }
