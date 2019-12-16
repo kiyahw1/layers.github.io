@@ -154,9 +154,9 @@ function getSubjectTab() {
 
 
 function responseCookie() {
-  response=document.getElementById('Layer1Response').value;
+  response=document.getElementById('Layer3Response').value;
   cookievalue = response+ ";";
-  document.cookie = "layer_1=" + cookievalue +"; path/";
+  document.cookie = "layer_3=" + cookievalue +"; path/";
   //document.getElementById('Layer1Response').value=response;
 
   alert(cookievalue);
