@@ -122,7 +122,7 @@ function responseCookie() {
 }
 
 function getResponse() {
-  var name = 'layer_1' + "=";
+  var name = 'layer_2' + "=";
       var decodedCookie = decodeURIComponent(document.cookie);
       var ca = decodedCookie.split(';');
       for(var i = 0; i <ca.length; i++) {
@@ -131,7 +131,7 @@ function getResponse() {
           c = c.substring(1);
       }
       if (c.indexOf(name) == 0) {
-          document.getElementById('Layer1Response').value= c.substring(name.length, c.length);
+          document.getElementById('Layer2Response').value= c.substring(name.length, c.length);
       }
   }
   return "";
