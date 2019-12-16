@@ -60,6 +60,10 @@ h1 {
     border: 0px !important; 
 }
 
+.btnText{
+    color: black;
+}
+
 /*Home Page Heading*/
 #home {
     padding-top: 100px;
