@@ -162,8 +162,8 @@ function responseCookie() {
   alert(cookievalue);
 }
 
-function getResponses() {
-  var name = 'layer_1' + "=";
+function getResponse() {
+  var name = 'layer_3' + "=";
       var decodedCookie = decodeURIComponent(document.cookie);
       var ca = decodedCookie.split(';');
       for(var i = 0; i <ca.length; i++) {
@@ -172,20 +172,7 @@ function getResponses() {
           c = c.substring(1);
       }
       if (c.indexOf(name) == 0) {
-          document.getElementById('Layer1Response').value= c.substring(name.length, c.length);
-      }
-  }
-
-  var name = 'layer_2' + "=";
-      var decodedCookie = decodeURIComponent(document.cookie);
-      var ca = decodedCookie.split(';');
-      for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-          document.getElementById('Layer2Response').value= c.substring(name.length, c.length);
+          document.getElementById('Layer3Response').value= c.substring(name.length, c.length);
       }
   }
   return "";
