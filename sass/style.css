@@ -68,6 +68,13 @@ h1 {
     height: 432px;
     width: 204px;
 }
+.upArrow{
+    position: absolute; 
+    margin-top: 250px; 
+    margin-left: 330px;
+    height: 75px;
+
+}
 /*Home Page Heading*/
 #home {
     padding-top: 100px;
