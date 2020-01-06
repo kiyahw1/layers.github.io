@@ -64,6 +64,10 @@ h1 {
     color: black;
 }
 
+.studentHome{
+    height: 432px;
+    width: 204px;
+}
 /*Home Page Heading*/
 #home {
     padding-top: 100px;
