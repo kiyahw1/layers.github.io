@@ -21,8 +21,11 @@ class Cookie {
         }
     
     write = () => {
+        alert("Running");
         response=document.getElementById(this.id).value;
         cookievalue = response + ";";
         document.cookie = this.name + cookievalue +"; path/";
+        
         }
 }
+
