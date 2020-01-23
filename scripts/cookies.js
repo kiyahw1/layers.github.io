@@ -5,11 +5,11 @@ class Cookie {
     }
 
     pull = (source) => {
-        var name = this.name + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
-        var c = ca[i];
+        let name = this.name + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
         while (c.charAt(0) === ' ') {
             c = c.substring(1);
         }
@@ -21,9 +21,8 @@ class Cookie {
         }
     
     write = () => {
-        alert("Running");
-        response=document.getElementById(this.id).value;
-        cookievalue = response + ";";
+        let response=document.getElementById(this.id).value;
+        let cookievalue = response + ";";
         document.cookie = this.name + cookievalue +"; path/";
         
         }
