@@ -4,7 +4,8 @@ function drawSubject(){
     'figurativeLanguage_Front.png', 
     'biology_Front.png', 
     'Math_Front.png', 
-    'computerScience_Front.png')
+    'computerScience_Front.png',
+    'GlobalCultures_Front.png')
     
     randomCard=subjectArray[Math.floor(Math.random()*subjectArray.length)];
 
