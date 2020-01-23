@@ -23,7 +23,7 @@ class Cookie {
     write = () => {
         let response=document.getElementById(this.id).value;
         let cookievalue = response + ";";
-        document.cookie = this.name + cookievalue +"; path/";
+        document.cookie = this.name + '=' + cookievalue +"; path/";
         
         }
 }
