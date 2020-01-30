@@ -13,11 +13,12 @@ function drawSubject(){
 
     //Updates instructions, next button, and draw student button
     document.getElementById("Body").innerHTML="This is your subject card. If you are not familiar with your topics, flip the card to read some examples. You will have access to this card as you create your activites. ";
-    document.getElementById('subjectNext').style.visibility = 'visible';
-    document.getElementById('arrowFlip').style.visibility='visible';
-    document.getElementById("subjectDraw").value = 'Redraw Subject Cards';
+    document.getElementById('subjectNext').style.display='block';
+    document.getElementById('arrowFlip').style.display='inline';
+    document.getElementById('subjectDraw').style.display='none';
 
     let cookievalue = randomCard + ";";
     document.cookie = "subject=" + cookievalue +"; path/";
+
 }
 

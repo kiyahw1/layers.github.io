@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+  <script src="../scripts/pullSubject.js"></script>
+  <script src=flipCard.js></script>
 </head>
 
-<body class="p-3">
+<body onload='disable()' class="p-3">
 
     <!--Main Title-->
   <div class= "container-fluid" style="position: relative;">
@@ -26,32 +28,30 @@
 
     <!--Displays Subject Card-->
     <div class='row justify-content-center'>
-      <script src="randomSubject.js"></script>
       <img id="subjectCard" src="../assets/StudentCards/questionMark.png" class="image-responsive" style="height:400px;">
     </div>
 
 
     <!--Draw a Subject Card-->
     <div class="row container-fluid justify-content-center mt-3">
-      <button type="button" class=" mb-5 btn btn-outline-light text-dark" id="subjectDraw" onclick="drawSubject();">Draw Your Subject Card</button>
+      <button type="button" class=" mb-1 btn btn-outline-light text-dark" id="subjectDraw" onclick="drawSubject();">Draw Your Subject Card</button>
     </div>
 
     
     <!--Flip Button and Next Button-->
     <div class="row container-fluid m-0">
-      <script src=flipCard.js></script>
       <div style="margin-left: auto; margin-right: auto;">
         <button type="button" class="btn" onclick="imageChange();" id="flip">
-            <img id='arrowFlip' class="flipArrow" src="../assets/flipArrow.png" style="visibility: hidden;">
+            <img id='arrowFlip' class="flipArrow" src="../assets/flipArrow.png" style="display: none;">
         </button>
       </div>
       <div class="next">
         <button type="button" class="btn" id= "next" onclick="window.location.href='students.html'">
-            <img id='subjectNext' class="arrow" src="../assets/Arrow.png" style="visibility:visible">
+            <img id='subjectNext' class="arrow" src="../assets/Arrow.png" style="display:none">
         </button>
       </div>
     </div>
   </div>
 
-</body>
+</body o>
 </html>
