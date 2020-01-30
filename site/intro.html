@@ -9,10 +9,10 @@
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="p-3" style='background-image: url("../backgrounds/homepage1.jpg"); background-size: 100%;'>
+<body class="p-3">
     <!--Main Title-->
   <div class= "container-fluid">
-    <div class="row justify-content-left mt-5">
+    <div class="row justify-content-left mt-1">
         <h2 id="Title">Instructions</h2>
     </div>
 
@@ -27,7 +27,7 @@
           <b>Please use Chrome on a laptop or desktop computer.</b><br>
           All data you enter is protected by MIT's IRB review procedures. No personal information will be shared, and your responses can only be used for research if you consent afterward. <br>
         </p>
-        <form class="row ">
+        <form class="row pb-3">
           <div class="col-lg-6">
             <p id="Body">Name:</p>
             <input type="text" name="name">
@@ -36,21 +36,14 @@
             <p id="Body">Email:</p>
             <input type="text" name="name">
           </div>
-        </form>
-      </div>
-    </div>
+        
 
-    <!--Next Button-->
-    <div class="row justify-content-end">
-        <button type="button" class="btn" onclick="window.location.href='anticipate.html'">
-            <img class="arrow" src="../assets/Arrow.png">
-        </button>
+          <!--Next Button-->
+          <button type="button" class="btn next" onclick="window.location.href='anticipate.html'">
+              <img class="arrow" src="../assets/Arrow.png">
+          </button>
+        </form>
     </div>
   </div>
-
-    <!--Footer-->
-    <footer class="fixed-bottom pl-3">
-        <p>Layers was made by the Teaching Systems Lab at the Massachusetts Institute of Technology</p>
-    </footer>
 </body>
 </html>

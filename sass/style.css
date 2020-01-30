@@ -1,12 +1,11 @@
 
 body {
     background:  #B5B5B5;
-}
-
-footer {
-    width: 100%;
-    background: black;
-    color: white;
+    min-height: 100%;
+    /*background-image: url("../backgrounds/homepage1.jpg"); */
+    background-size: 100%;
+    padding:0;
+    margin:0;
 }
 
 h1 {
@@ -47,7 +46,12 @@ h1 {
 .arrow {
     width: 50%;
     height: 50%;
-    justify-self: flex-end;
+}
+
+.next {
+    position: absolute; 
+    right: 0; 
+    align-self: center;
 }
 
 .flipArrow {
@@ -55,7 +59,7 @@ h1 {
     height:25%;
 }
 
-.btn{
+.btnasset{
     padding: 0px !important;
     border: 0px !important; 
 }
@@ -106,12 +110,4 @@ h1 {
     text-align: center;
 
     top: 500px;
-}
-
-#btn {
-    justify-self: center;
-}
-
-#next{
-    justify-self: end;
 }

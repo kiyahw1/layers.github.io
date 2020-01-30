@@ -10,7 +10,7 @@
   <script src= "../scripts/cookies.js"></script>
 </head>
 
-<body class="p-3" style='background-image: url("../backgrounds/homepage1.jpg"); background-size: 100%;'>
+<body class="p-3">
     <!--Main Title-->
   <div class= "container-fluid">
     <div class="row justify-content-left mt-1">
@@ -24,30 +24,22 @@
             What kind of information about your students do you consider important when building, creating, and/or brainstorming class activities? 
         </p>
       </div>
-    </div>
 
     <!--Participant Response Form-->
-    
     <form id="form">  
       <div class="form-group">
         <label for="AnticipateParticipantResponse">Type your response here</label>
-        <textarea class="form-control" id="AnticipateResponse" rows="18" name="entry.280846240" required></textarea>
+        <textarea class="form-control" id="AnticipateResponse" rows="10" name="entry.280846240" required></textarea>
       </div>
     </form>
 
-
-
     <!--Next Button-->
-    <div class="row justify-content-end">
-        <button type="button" class="btn" onclick="window.location.href='subject.html'; let c = new Cookie('Anticipate', 'AnticipateResponse'); c.write();">
+    <div class="row">
+        <button type="button" class="my-2 btn next" onclick="window.location.href='subject.html'; let c = new Cookie('Anticipate', 'AnticipateResponse'); c.write();">
             <img class="arrow" src="../assets/Arrow.png">
         </button>
     </div>
-  </div>
 
-    <!--Footer-->
-    <footer class="fixed-bottom pl-3">
-        <p>Layers was made by the Teaching Systems Lab at the Massachusetts Institute of Technology</p>
-    </footer>
+  </div>
 </body>
 </html>
