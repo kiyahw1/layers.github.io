@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
-  <script src="../scripts/pullSubject.js"></script>
-  <script src=flipCard.js></script>
+  <script src="../scripts/Subject.js"></script>
 </head>
 
-<body onload='disable()' class="p-3">
+<body class="p-3" onload="let frontback = '_Front.png'";>
 
     <!--Main Title-->
-  <div class= "container-fluid" style="position: relative;">
+  <div class= "container-fluid">
     <div class="row justify-content-left mt-1">
         <h2 id="Title">Subject Card</h2>
     </div>
@@ -28,16 +27,14 @@
 
     <!--Displays Subject Card-->
     <div class='row justify-content-center'>
-      <img id="subjectCard" src="../assets/StudentCards/questionMark.png" class="image-responsive" style="height:400px;">
+      <img id="subject" src="../assets/StudentCards/questionMark.png" class="image-responsive" style="height:400px;">
     </div>
-
 
     <!--Draw a Subject Card-->
     <div class="row container-fluid justify-content-center mt-3">
       <button type="button" class=" mb-1 btn btn-outline-light text-dark" id="subjectDraw" onclick="drawSubject();">Draw Your Subject Card</button>
     </div>
 
-    
     <!--Flip Button and Next Button-->
     <div class="row container-fluid m-0">
       <div style="margin-left: auto; margin-right: auto;">
@@ -53,5 +50,5 @@
     </div>
   </div>
 
-</body o>
+</body>
 </html>
