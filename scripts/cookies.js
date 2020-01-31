@@ -15,6 +15,7 @@ class Cookie {
         }
         if (c.indexOf(name) == 0) {
             document.getElementById(id).value= c.substring(name.length, c.length);
+        alert('pulled')
         }
     }
     
