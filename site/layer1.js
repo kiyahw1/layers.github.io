@@ -89,5 +89,4 @@ function getResponse() {
           document.getElementById('Layer1Response').value= c.substring(name.length, c.length);
       }
   }
-  return "";
 }
