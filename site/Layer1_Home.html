@@ -7,11 +7,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
-  <script src='../scripts/subject.js'></script>
+  <script src='../scripts/tabs.js'></script>
   <script src="../scripts/cookies.js"></script>
 </head>
 
-<body onload="getSubjectTab(); getStudentTabs(); let c = new Cookie('layer1', 'Layer1Response'); c.write();" style="background-size: 100%;">
+<body onload="getTab('subject','subject','Tab'); //Loads Subject Tab
+getTabs('student1layer1','student_1','Layer1'); //Loads Student 1 Tab
+getTabs('student2layer1','student_2','Layer1'); //Loads Student 2 Tab
+getTabs('student3layer1','student_3','Layer1'); //Loads Student 3 Tab
+let c = new Cookie('layer1', 'Layer1Response'); c.write();" style="background-size: 100%;">
  
     <!--Main Title-->
   <div class= "container-fluid">

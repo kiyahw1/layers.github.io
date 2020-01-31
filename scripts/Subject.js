@@ -22,22 +22,6 @@ function drawSubject(){
 
 }
 
-function getSubjectTab() {
-    var name = 'subject' + "=";
-    var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        document.getElementById('subject').src="../assets/tabs/Tab_" + c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
-
 function imageChange() {
   let fullname = document.getElementById("subject").src;
   let frontback = fullname.substring(fullname.lastIndexOf('_'),fullname.length);
