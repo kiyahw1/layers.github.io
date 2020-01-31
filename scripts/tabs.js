@@ -11,6 +11,5 @@ function getTab(id,cookie,layer){
             document.getElementById(id).src="../assets/tabs/"+layer+"_" + c.substring(name.length, c.length);
         }
     }
-    alert('hello')
-    return "";
+    alert("hello")
 }
