@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+  <script src='../scripts/cookies.js'></script>
 </head>
 
 <body class="p-3">
@@ -30,16 +31,18 @@
         <form class="row pb-3">
           <div class="col-lg-6">
             <p id="Body">Name:</p>
-            <input type="text" name="name">
+            <input type="text" name="name" id="Name">
           </div>
           <div class="col-lg-6">
             <p id="Body">Email:</p>
-            <input type="text" name="name">
+            <input type="text" name="name" id="Email">
           </div>
         
 
           <!--Next Button-->
-          <button type="button" class="btn next" onclick="window.location.href='anticipate.html'">
+          <button type="button" class="btn next" onclick="window.location.href='anticipate.html'; 
+          let n = new Cookie('Name', 'Name'); n.write();
+          let e = new Cookie('Email', 'Email'); e.write();">
               <img class="arrow" src="../assets/Arrow.png">
           </button>
         </form>
