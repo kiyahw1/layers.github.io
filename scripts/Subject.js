@@ -46,7 +46,7 @@ function getSubjectCard() {
     }
 
     if (c.indexOf(name) == 0) {
-      document.getElementById('subjectCard').src="../assets/SubjectCards/" + c.substring(name.length, c.length);
+      document.getElementById('subject').src="../assets/SubjectCards/" + c.substring(name.length, c.length);
     }
   }
   return "";
