@@ -26,5 +26,5 @@ class Cookie {
         alert(cookievalue)
         
         }
+    }
 }
-
