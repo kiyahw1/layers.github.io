@@ -27,14 +27,18 @@ style='background-size: 100%;'>
 
   <!--Navigation Arrows-->
     <div class="col-md-1 justify-content-center">
-      <button type="button" id='upbutton' class="btn"  
-      onclick="changelayer('up',getcurrentlayer());" style="margin-bottom: auto; margin-top: auto;">
-        <img class="arrow" id='uparrow' src="../assets/upArrow.png" style="display:none">
-      </button>
-      <button type="button" id= 'downbutton' class="btn"
-      onclick="changelayer('down',getcurrentlayer());" style="margin-bottom: auto; margin-top: auto;">
-        <img class="arrow" id='downarrow' src="../assets/downArrow.png"  style="display:none">
-      </button>
+      <div style="margin-bottom: auto; margin-top: auto;">
+        <button type="button" id='upbutton' class="btn"  
+        onclick="changelayer('up',getcurrentlayer());">
+          <img class="arrow" id='uparrow' src="../assets/upArrow.png" style="display:none">
+        </button>
+      </div>
+      <div style="margin-bottom: auto; margin-top: auto;">
+        <button type="button" id= 'downbutton' class="btn"
+        onclick="changelayer('down',getcurrentlayer());" style="margin-bottom: auto; margin-top: auto;">
+          <img id='downarrow' src="../assets/downArrow.png"  style="display:none;">
+        </button>
+      </div>
     </div>
 
     <!--Enact Question 1 Response-->
