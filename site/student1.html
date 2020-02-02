@@ -15,7 +15,7 @@
   </script>
 </head>
 
-<body onload="getStudent('student_1','student1');" style='background-size: 100%;'>
+<body onload="getStudent('student_1','student1'); displayarrows(getcurrentlayer());" style='background-size: 100%;'>
 
   <!--Student Card-->
   <div class="row container-fluid mt-1 ml-0 p-3">
@@ -25,13 +25,13 @@
 
   <!--Navigation Arrows-->
     <div class="col-md-1 justify-content-center">
-      <button type="button" class="btn" style="display:block" 
-      onclick="changelayer('down',getcurrentlayer());">
-        <img class="arrow" id='subjectNext' src="../assets/upArrow.png">
+      <button type="button" class="btn" style="display:none" 
+      onclick="changelayer('up',getcurrentlayer());">
+        <img class="arrow" id='uparrow' src="../assets/upArrow.png">
       </button>
       <button type="button" class="btn" style="display:none"
-      onclick="window.location.href='Layer3_Home.html'; responseCookie();">
-        <img class="arrow" id='subjectNext' src="../assets/downArrow.png">
+      onclick="changelayer('down',getcurrentlayer());">
+        <img class="arrow" id='downarrow' src="../assets/downArrow.png">
       </button>
     </div>
 
