@@ -25,7 +25,7 @@ function changelayer(direction,current){
 
 function displayarrows(current){
     if(current=='Layer2_Home' || current=='Layer3_Home'){
-        document.getElementById('downbutton').style.display='block';
+        document.getElementById('downarrow').style.display='block';
     alert(current)
     }
 }
