@@ -16,13 +16,13 @@ function getStudent(number,id){
 function changelayer(direction,current,student,id){
     if (current=='Layer2_Home'){
         if (direction=='down'){
-            currentlayer+=1
-            document.getElementById('downarrow').style.display='hidden'
-            document.getElementById('uparrow').style.display='block'
+            currentlayer+=1;
+            document.getElementById('downarrow').style.display='none';
+            document.getElementById('uparrow').style.display='block';
             }else{
             currentlayer-=1
-            document.getElementById('uparrow').style.display='hidden'
-            document.getElementById('downarrow').style.display='block'
+            document.getElementById('uparrow').style.display='none';
+            document.getElementById('downarrow').style.display='block';
         }
     }
     var name = student + "=";
@@ -34,7 +34,7 @@ function changelayer(direction,current,student,id){
         c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
-        document.getElementById(id).src="../assets/StudentCards/Layer"+toString(currentlayer)+'_'+c.substring(name.length, c.length);
+        document.getElementById(id).src="../assets/StudentCards/Layer"+currentlayer.toString()+'_'+c.substring(name.length, c.length);
     }
     }
     alert(currentlayer)
