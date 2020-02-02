@@ -7,25 +7,16 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
-  <script src='layer2.js'></script>
+  <script src='../scripts/tabs.js'></script>
+  <script src="../scripts/cookies.js"></script>
 </head>
 
-<body onload="getSubjectTab(); getStudentTabs(); getResponse();" style='background-image: url("../backgrounds/homepage1.jpg"); background-size: 100%;'>
-    <!-- Navigation Bar -->
-  <div class="row">
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <header>
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                <a  class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-          </ul>
-      </header>
-    </nav>
-  </div>
+<body onload="getTab('subject','subject','Tab'); //Loads Subject Tab
+getTab('student1layer1','student_1','Layer1'); //Loads Student 1 Tab
+getTab('student2layer1','student_2','Layer1'); //Loads Student 2 Tab
+getTab('student3layer1','student_3','Layer1'); //Loads Student 3 Tab
+let c = new Cookie('Layer2_Home', 'Layer2Response'); c.pull();" 
+style="background-size: 100%;">
 
     <!--Main Title-->
   <div class= "container-fluid">
@@ -49,7 +40,7 @@
     <div class="row justify-content-left">
       <div class="col-lg-2 container">
         <div class="row"> <!--Student 1-->
-          <button type="button" class="btn" onclick="window.location.href='student1Layer2.html'; responseCookie();">
+          <button type="button" class="btn" onclick="window.location.href='student1.html'; responseCookie();">
             <img src="#" id= "student1layer1" style="height:200px;">
           </button>
           <button type="button" class="btn" onclick="window.location.href='student1Layer2.html'; responseCookie();">
