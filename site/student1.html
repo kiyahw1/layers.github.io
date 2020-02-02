@@ -10,34 +10,28 @@
   <script src="layer3Students.js"></script>
 </head>
 
-<body onload="getStudent1Layer3(); getResponse();" style='background-image: url("../backgrounds/homepage1.jpg"); background-size: 100%;'>
-    <!-- Navigation Bar -->
-  <div class="row">
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <header>
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                <a  class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-          </ul>
-      </header>
-    </nav>
-  </div>
+<body onload="getStudent1Layer3(); getResponse();" style='background-size: 100%;'>
 
-   <!--Arrow-->
-   <div>
-    <img src="../assets/upArrow.png" class="upArrow">
-  </div>
   <!--Student Card-->
-  <div class="row container-fluid mt-5 ml-0 p-3">
-    <div class="col-lg-3">
-      <img src="#" id="s1l3" style="height: 600px">
+  <div class="row container-fluid mt-1 ml-0 p-3">
+    <div class="col-md-3">
+      <img src="#" id="student1" style="height: 600px">
     </div>
+
+  <!--Navigation Arrows-->
+    <div class="col-md-1 justify-content-center">
+      <button type="button" class="btn" onclick="window.location.href='Layer3_Home.html'; 
+      responseCookie();">
+        <img class="arrow" id='subjectNext' src="../assets/upArrow.png">
+      </button>
+      <button type="button" class="btn" onclick="window.location.href='Layer3_Home.html'; 
+      responseCookie();">
+        <img class="arrow" id='subjectNext' src="../assets/downArrow.png">
+      </button>
+    </div>
+
     <!--Enact Question 1 Response-->
-    <div class="col-lg-9">
+    <div class="col-md-8">
         <div class="form-group">
           <label for="Layer3Response">Type your response here</label>
           <textarea class="form-control" id="Layer3Response" rows="20"  ></textarea>
@@ -50,14 +44,9 @@
   <!--Back Arrow-->
   <div class="row justify-content-left pl-3 ml-0 mb-2">
       <button type="button" class="btn" onclick="window.location.href='Layer3_Home.html'; responseCookie();" style= 'width:100px'>
-        <img id='subjectNext' src="../assets/backArrow.png" style= 'width:100px'>
+        <img class="arrow" id='subjectNext' src="../assets/backArrow.png">
       </button>
     </div>
 
-
-    <!--Footer-->
-    <footer class="fixed-bottom pl-3">
-        <p>Layers was made by the Teaching Systems Lab at the Massachusetts Institute of Technology</p>
-    </footer>
 </body>
 </html>
