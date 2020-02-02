@@ -5,7 +5,7 @@ class Cookie {
     }
 
     pull = () => {
-        var name = name + "=";
+        var name = this.name + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
         var ca = decodedCookie.split(';');
         for(var i = 0; i <ca.length; i++) {
@@ -14,7 +14,7 @@ class Cookie {
                 c = c.substring(1);
             }
             if (c.indexOf(name) == 0) {
-                document.getElementById(id).value= c.substring(name.length, c.length);
+                document.getElementById(this.id).value= c.substring(name.length, c.length);
             alert('responsepulled')
             }
         }
