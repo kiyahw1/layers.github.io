@@ -12,11 +12,12 @@
   <script src="../scripts/studentlayers.js"></script>
   <script>
     let currentlayer= 1;
+    let c = new Cookie(getcurrentlayer(),'Response');
   </script>
 </head>
 
 <body onload="getStudent('student_1','student1'); displayarrows(getcurrentlayer());
-let c = new Cookie(getcurrentlayer(),'Response'); c.pull();" 
+c.pull();" 
 style='background-size: 100%;'>
 
   <!--Student Card-->
@@ -29,13 +30,13 @@ style='background-size: 100%;'>
     <div class="col-md-1 justify-content-center">
       <div style="margin-bottom: auto; margin-top: auto;">
         <button type="button" id='upbutton' class="btn"  
-        onclick="changelayer('up',getcurrentlayer());">
+        onclick="changelayer('up',getcurrentlayer(),'student_1','student1');">
           <img class="arrow" id='uparrow' src="../assets/upArrow.png" style="display:none">
         </button>
       </div>
       <div style="margin:auto;">
         <button type="button" id= 'downbutton' class="btn"
-        onclick="changelayer('down',getcurrentlayer());">
+        onclick="changelayer('down',getcurrentlayer(),);">
           <img id='downarrow' src="../assets/downArrow.png"  style="display:none;">
         </button>
       </div>
@@ -55,7 +56,7 @@ style='background-size: 100%;'>
   <!--Back Arrow-->
   <div class="row justify-content-left pl-3 ml-0 mb-2">
       <button type="button" class="btn" onclick="navigation('currentlayer');
-      let c = new Cookie(getcurrentlayer(),'Response'); c.write();">
+      c.write();">
         <img class="arrow" id='subjectNext' src="../assets/backArrow.png">
       </button>
     </div>
