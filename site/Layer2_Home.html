@@ -21,15 +21,17 @@ style="background-size: 100%;">
     <!--Main Title-->
   <div class= "container-fluid">
     <div class="row justify-content-left">
-      <div class="col-lg-2 mt-5 justify-content-left p-3">
+      <div class="col-lg-2 mt-1 justify-content-left p-3">
         <h2 id="Title">Layer 2</h2>
       </div>
       <!--Subject Card Tab-->
-      <div class="col-lg-10" style="margin-top: 38px">
-        <button type="button" class="btn" onclick= "window.location.href='subjectCard.html'; responseCookie();">
+      <div class="col-md-1">
+        <button type="button" class="btn p-0" onclick= "window.location.href='subjectCard.html'; 
+        let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
           <img id= 'subject' src="#" style="width: 250px;">
         </button>
-        <button type="button" class="btn" onclick= "window.location.href='response1.html'; responseCookie();">
+        <button type="button" class="btn" onclick= "window.location.href='response1.html'; 
+        let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
           <img id= 'subject' src="../assets/tabs/Layer1Response.png" style="width: 250px;">
         </button>
       </div>
@@ -40,26 +42,32 @@ style="background-size: 100%;">
     <div class="row justify-content-left">
       <div class="col-lg-2 container">
         <div class="row"> <!--Student 1-->
-          <button type="button" class="btn" onclick="window.location.href='student1.html'; responseCookie();">
+          <button type="button" class="btn" onclick="window.location.href='student1.html'; 
+          let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
             <img src="#" id= "student1layer1" style="height:200px;">
           </button>
-          <button type="button" class="btn" onclick="window.location.href='student1Layer2.html'; responseCookie();">
+          <button type="button" class="btn" onclick="window.location.href='student1Layer2.html'; 
+          let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
             <img src="#" id= "student1layer2" style="height:200px;">
           </button>
         </div>
         <div class="row"> <!--Student 2-->
-          <button type="button" class="btn" onclick="window.location.href='student2Layer2.html';responseCookie();">
+          <button type="button" class="btn" onclick="window.location.href='student2Layer2.html';
+          let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
             <img src="#" style="height:200px" id="student2layer1">
           </button>
-          <button type="button" class="btn" onclick="window.location.href='student2Layer2.html'; responseCookie();">
+          <button type="button" class="btn" onclick="window.location.href='student2Layer2.html'; 
+          let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
             <img src="#" id= "student2layer2" style="height:200px;">
           </button>
         </div>
         <div class="row"> <!--Student 3-->
-          <button type="button" class="btn" onclick="window.location.href='student3Layer2.html'; responseCookie();">
+          <button type="button" class="btn" onclick="window.location.href='student3Layer2.html'; 
+          let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
             <img src="#" style="height:200px" id=student3layer1>
           </button>
-          <button type="button" class="btn" onclick="window.location.href='student3Layer2.html'; responseCookie();">
+          <button type="button" class="btn" onclick="window.location.href='student3Layer2.html'; 
+          let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
             <img src="#" id= "student3layer2" style="height:200px;">
           </button>          
         </div>
