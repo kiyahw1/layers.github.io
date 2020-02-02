@@ -9,7 +9,7 @@ function navigation(layer){
         }
         if (c.indexOf(name) == 0) {
             alert('pulled');
-            return (c.substring(name.length, c.length)+'.html');
+            window.location.assign(c.substring(name.length, c.length)+'.html');
         }
     }
 }
