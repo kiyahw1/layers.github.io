@@ -14,7 +14,7 @@ function getStudent(number,id){
 }
 
 function changelayer(direction,current){
-    if (current=='Layer1_Home'){
+    if (current=='Layer2_Home'){
         if (direction=='down'){
             currentlayer+=1
         }
