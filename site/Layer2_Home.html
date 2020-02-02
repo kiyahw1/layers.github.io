@@ -13,8 +13,12 @@
 
 <body onload="getTab('subject','subject','Tab'); //Loads Subject Tab
 getTab('student1layer1','student_1','Layer1'); //Loads Student 1 Tab
+getTab('student1layer2','color1','Layer2'); //Loads Student 1 Tab
 getTab('student2layer1','student_2','Layer1'); //Loads Student 2 Tab
+getTab('student2layer2','color2','Layer2'); //Loads Student 2 Tab
 getTab('student3layer1','student_3','Layer1'); //Loads Student 3 Tab
+getTab('student3layer2','color3','Layer2'); //Loads Student 3 Tab
+
 let c = new Cookie('Layer2_Home', 'Layer2Response'); c.pull();" 
 style="background-size: 100%;">
 
@@ -25,12 +29,12 @@ style="background-size: 100%;">
         <h2 id="Title">Layer 2</h2>
       </div>
       <!--Subject Card Tab-->
-      <div class="col-md-1">
+      <div class="col-md-10">
         <button type="button" class="btn p-0" onclick= "window.location.href='subjectCard.html'; 
         let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
           <img id= 'subject' src="#" style="width: 250px;">
         </button>
-        <button type="button" class="btn" onclick= "window.location.href='response1.html'; 
+        <button type="button" class="btn p-0" onclick= "window.location.href='response1.html'; 
         let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
           <img id= 'subject' src="../assets/tabs/Layer1Response.png" style="width: 250px;">
         </button>
@@ -46,7 +50,7 @@ style="background-size: 100%;">
           let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
             <img src="#" id= "student1layer1" style="height:200px;">
           </button>
-          <button type="button" class="btn" onclick="window.location.href='student1Layer2.html'; 
+          <button type="button" class="btn" onclick="window.location.href='student1.html'; 
           let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
             <img src="#" id= "student1layer2" style="height:200px;">
           </button>
