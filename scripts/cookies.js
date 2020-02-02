@@ -15,7 +15,7 @@ class Cookie {
             }
             if (c.indexOf(name) == 0) {
                 document.getElementById(this.id).value= c.substring(name.length, c.length);
-            alert('responsepulled')
+            alert('pull for form')
             }
         }
     }
@@ -27,4 +27,21 @@ class Cookie {
         alert(cookievalue)
         
         }
+    
+    pullhtml = () => {
+        var name = this.name + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                document.getElementById(this.id).innerHTML= c.substring(name.length, c.length);
+            alert('pull for form')
+            }
+        }
+    }
+        
     }
