@@ -34,7 +34,8 @@ function changelayer(direction,current,student,id){
         c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
-        document.getElementById(id).src="../assets/StudentCards/Layer"+currentlayer.toString()+'_'+c.substring(name.length, c.length);
+        num=currentlayer.toString()
+        document.getElementById(id).src="../assets/StudentCards/Layer"+num+'_'+c.substring(name.length, c.length);
     }
     }
     alert(currentlayer)
