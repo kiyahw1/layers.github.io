@@ -16,7 +16,7 @@
 </head>
 
 <body onload="getStudent('student_1','student1'); displayarrows(getcurrentlayer());
-let c = newCookie(getcurrentlayer(),'Response'); c.pull();" 
+let c = new Cookie(getcurrentlayer(),'Response'); c.pull();" 
 style='background-size: 100%;'>
 
   <!--Student Card-->
@@ -51,7 +51,7 @@ style='background-size: 100%;'>
   <!--Back Arrow-->
   <div class="row justify-content-left pl-3 ml-0 mb-2">
       <button type="button" class="btn" onclick="navigation('currentlayer');
-      let c = newCookie(getcurrentlayer(),'Response'); c.pull();">
+      let c = new Cookie(getcurrentlayer(),'Response'); c.write();">
         <img class="arrow" id='subjectNext' src="../assets/backArrow.png">
       </button>
     </div>
