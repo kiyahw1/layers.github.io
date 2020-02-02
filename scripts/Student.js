@@ -11,7 +11,7 @@ function drawStudents(){
 
     //Selects student 1 and removes card from deck
     let random1=deck[Math.floor(Math.random()*deck.length)];
-    document.getElementById("student1").src= "../assets/StudentCards/"+random1;
+    document.getElementById("student1").src= "../assets/StudentCards/Layer1_"+random1;
     for (var i = 0; i<deck.length;i++){
         if(deck[i]===random1){
             deck.splice(i,1);
@@ -41,7 +41,7 @@ function drawStudents(){
 
     //Selects student 2 and removes card from deck
     let random2=deck[Math.floor(Math.random()*deck.length)];
-    document.getElementById("student2").src="../assets/StudentCards/"+random2;
+    document.getElementById("student2").src="../assets/StudentCards/Layer2_"+random2;
     for(var i = 0; i<deck.length;i++){
         if (deck[i]===random2){
            deck.splice(i,1);
@@ -70,7 +70,7 @@ function drawStudents(){
 
     //Selects student 3
     let random3=deck[Math.floor(Math.random()*deck.length)];
-    document.getElementById("student3").src="../assets/StudentCards/"+random3;
+    document.getElementById("student3").src="../assets/StudentCards/Layer3_"+random3;
     
     //Sets cookie for student 3
     cookievalue = random3 + ";";
