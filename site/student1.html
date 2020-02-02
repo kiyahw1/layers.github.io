@@ -15,7 +15,9 @@
   </script>
 </head>
 
-<body onload="getStudent('student_1','student1'); displayarrows(getcurrentlayer());" style='background-size: 100%;'>
+<body onload="getStudent('student_1','student1'); displayarrows(getcurrentlayer());
+let c = newCookie(getcurrentlayer(),'Response'); c.pull();" 
+style='background-size: 100%;'>
 
   <!--Student Card-->
   <div class="row container-fluid mt-1 ml-0 p-3">
@@ -39,7 +41,7 @@
     <div class="col-md-8">
         <div class="form-group">
           <label for="Layer3Response">Type your response here</label>
-          <textarea class="form-control" id="Layer3Response" rows="20"  ></textarea>
+          <textarea class="form-control" id="Response" rows="20"  ></textarea>
         </div>
       </form>
 
@@ -48,7 +50,8 @@
  
   <!--Back Arrow-->
   <div class="row justify-content-left pl-3 ml-0 mb-2">
-      <button type="button" class="btn" onclick="navigation('currentlayer');">
+      <button type="button" class="btn" onclick="navigation('currentlayer');
+      let c = newCookie(getcurrentlayer(),'Response'); c.pull();">
         <img class="arrow" id='subjectNext' src="../assets/backArrow.png">
       </button>
     </div>
