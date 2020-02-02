@@ -25,17 +25,17 @@ function drawStudents(){
 
     //Sets cookie for student 1 color
     if(random1 =='Dylan.png' || random1 == 'Lucy.png'){
-        let color1 = 'Red;';
-        document.cookie="color1="+ color1+".png; path/"
+        let color1 = 'Red.png;';
+        document.cookie="color1="+ color1+"; path/"
     } else if (random1 =='Isabella.png' || random1 == 'Paris.png'){
-        let color1='Yellow;';
-        document.cookie="color1="+ color1+".png; path/"
+        let color1='Yellow.png;';
+        document.cookie="color1="+ color1+"; path/"
     } else if (random1 =='John.png' || random1 == 'Orlando.png' || random1 == 'Amanda.png'){
-        let color1='Green;';
-        document.cookie="color1="+ color1+".png; path/"
+        let color1='Green.png;';
+        document.cookie="color1="+ color1+"; path/"
     } else if (random1 =='Siobhan.png' || random1 == 'Tamika.png'){
-        let color1='Blue;';
-        document.cookie="color1="+ color1+".png; path/"
+        let color1='Blue.png;';
+        document.cookie="color1="+ color1+"; path/"
     }
     
 
@@ -55,17 +55,17 @@ function drawStudents(){
 
     //Sets cookie for student 2 color
     if(random2 =='Dylan.png' || random2 == 'Lucy.png'){
-        let color2 = 'Red;';
-        document.cookie="color2="+ color2+".png; path/"
+        let color2 = 'Red.png;';
+        document.cookie="color2="+ color2+"; path/"
     } else if (random2 =='Isabella.png' || random2== 'Paris.png'){
-        let color2='Yellow;';
-        document.cookie="color2="+ color2+".png; path/"
+        let color2='Yellow.png;';
+        document.cookie="color2="+ color2+"; path/"
     } else if (random2=='John.png' || random2 == 'Orlando.png' || random2== 'Amanda.png'){
-        let color2='Green;';
-        document.cookie="color2="+ color2+".png; path/"
+        let color2='Green.png;';
+        document.cookie="color2="+ color2+"; path/"
     } else if (random2 =='Siobhan.png' || random2 == 'Tamika.png'){
-        let color2='Blue;';
-        document.cookie="color2="+ color2+".png; path/"
+        let color2='Blue.png;';
+        document.cookie="color2="+ color2+"; path/"
     }
 
     //Selects student 3
@@ -79,24 +79,24 @@ function drawStudents(){
 
      //Sets cookie for student 3 color
      if(random3 =='Dylan.png' || random3 == 'Lucy.png'){
-        let color3 = 'Red;';
-        document.cookie="color3="+ color3+".png; path/"
+        let color3 = 'Red.png;';
+        document.cookie="color3="+ color3+"; path/"
     } else if (random3 =='Isabella.png' || random3== 'Paris.png'){
-        let color3='Yellow;';
-        document.cookie="color3="+ color3+".png; path/"
+        let color3='Yellow.png;';
+        document.cookie="color3="+ color3+"; path/"
     } else if (random3=='John.png' || random3 == 'Orlando.png' || random3== 'Amanda.png'){
-        let color3='Green;';
-        document.cookie="color3="+ color3+".png; path/"
+        let color3='Green.png;';
+        document.cookie="color3="+ color3+"; path/"
     } else if (random3 =='Siobhan.png' || random3 == 'Tamika.png'){
-        let color3='Blue;';
-        document.cookie="color3="+ color3+".png; path/"
+        let color3='Blue.png;';
+        document.cookie="color3="+ color3+"; path/"
     }
 
     //Updates instructions, next button, and draw student button
     document.getElementById("Body").innerHTML="These are your focal students for this round. Each student card has 3 layers, with Layer 1 starting on the top as the shortest layer, and Layer 3 as the longest layer at the bottom.";
     document.getElementById('studentNext').style.display = 'block';
     document.getElementById("studentDraw").style.display = 'none';
-    alert('colored')
+ alert('better colored')
 }
 
 
