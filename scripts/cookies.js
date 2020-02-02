@@ -39,7 +39,7 @@ class Cookie {
             }
             if (c.indexOf(name) == 0) {
                 document.getElementById(this.id).innerHTML= c.substring(name.length, c.length);
-            alert('pull for form')
+            alert('pull for html')
             }
         }
     }
