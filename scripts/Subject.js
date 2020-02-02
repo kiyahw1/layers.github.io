@@ -1,5 +1,5 @@
 function drawSubject(){
-    let subjectArray = new Array('History.png', 
+    let subjectArray = new Array('History_Front.png', 
     'Earth Science_Front.png',
     'Figurative Language_Front.png', 
     'Biology_Front.png', 
