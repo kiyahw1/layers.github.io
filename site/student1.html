@@ -7,10 +7,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
-  <script src="layer3Students.js"></script>
+  <script src="../scripts/cookies.js"></script>
+  <script src="../scripts/navigation.js"></script>
+  <script>
+    let currentlayer= 1;
+  </script>
 </head>
 
-<body onload="getStudent1Layer3(); getResponse();" style='background-size: 100%;'>
+<body onload="getStudent('student_1','student1'); 
+getResponse();" style='background-size: 100%;'>
 
   <!--Student Card-->
   <div class="row container-fluid mt-1 ml-0 p-3">
@@ -20,12 +25,12 @@
 
   <!--Navigation Arrows-->
     <div class="col-md-1 justify-content-center">
-      <button type="button" class="btn" onclick="window.location.href='Layer3_Home.html'; 
-      responseCookie();">
+      <button type="button" class="btn" style="display:block" 
+      onclick="window.location.href=changelayer('down',getcurrentlayer()); responseCookie();">
         <img class="arrow" id='subjectNext' src="../assets/upArrow.png">
       </button>
-      <button type="button" class="btn" onclick="window.location.href='Layer3_Home.html'; 
-      responseCookie();">
+      <button type="button" class="btn" style="display:none"
+      onclick="window.location.href='Layer3_Home.html'; responseCookie();">
         <img class="arrow" id='subjectNext' src="../assets/downArrow.png">
       </button>
     </div>
@@ -43,7 +48,7 @@
  
   <!--Back Arrow-->
   <div class="row justify-content-left pl-3 ml-0 mb-2">
-      <button type="button" class="btn" onclick="window.location.href='Layer3_Home.html'; responseCookie();" style= 'width:100px'>
+      <button type="button" class="btn" onclick="navigation('currentlayer');">
         <img class="arrow" id='subjectNext' src="../assets/backArrow.png">
       </button>
     </div>
