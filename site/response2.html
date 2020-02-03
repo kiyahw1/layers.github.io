@@ -1,35 +1,22 @@
 <!DOCTYPE HTML>
 <html lang = "en">
 <head>
-  <title>Layers: Enact</title>
+  <title>Layers: Response 2</title>
   <meta charset = "UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
-  <script src='responses.js'></script>
+  <script src='../scripts/cookies.js'></script>
+  <script src='../scripts/navigation.js'></script>
 </head>
 
-<body class="p-3" style='background-image: url("../backgrounds/homepage1.jpg"); background-size: 100%;' onload="getResponse2();">
-    <!-- Navigation Bar -->
-  <div class="row">
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <header>
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                <a  class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-          </ul>
-      </header>
-    </nav>
-  </div>
+<body class="p-3" style='background-size: 100%;'
+onload="let c= new Cookie('Layer2_Home','Body'); c.pullhtml();">
 
     <!--Main Title-->
   <div class= "container-fluid">
-    <div class="row justify-content-left mt-5">
+    <div class="row justify-content-left mt-1">
         <h2 id="Title">Layer 2 Response</h2>
     </div>
 
@@ -41,17 +28,13 @@
       </div>
     </div>
 
-    <!--Next Button-->
+    <!--Back Button-->
     <div class="row justify-content-start">
-        <button type="button" class="btn" onclick="window.location.href='Layer3_Home.html'">
+        <button type="button" class="btn" onclick="navigation('currentlayer')">
             <img class="arrow" src="../assets/backArrow.png">
         </button>
     </div>
   </div>
 
-    <!--Footer-->
-    <footer class="fixed-bottom pl-3">
-        <p>Layers was made by the Teaching Systems Lab at the Massachusetts Institute of Technology</p>
-    </footer>
 </body>
 </html>
