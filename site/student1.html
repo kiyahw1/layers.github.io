@@ -12,11 +12,11 @@
   <script src="../scripts/studentlayers.js"></script>
   <script>
     let currentlayer= 1;
-    let c = new Cookie(getcurrentlayer(),'Response');
+    let c = new Cookie(getcookie('currentlayer'),'Response');
   </script>
 </head>
 
-<body onload="getStudent('student_1','student1'); displayarrows(getcurrentlayer());
+<body onload="getStudent('student_1','student1'); displayarrows(getcookie('currentlayer'));
 c.pull();" 
 style='background-size: 100%;'>
 
@@ -30,13 +30,13 @@ style='background-size: 100%;'>
     <div class="col-md-1 justify-content-center">
       <div style="margin-bottom: auto; margin-top: auto;">
         <button type="button" id='upbutton' class="btn"  
-        onclick="changelayer('up',getcurrentlayer(),'student_1','student1');">
+        onclick="changelayer('up',getcookie('currentlayer'),'student_1','student1');">
           <img id='uparrow' src="../assets/upArrow.png" style="display:none">
         </button>
       </div>
       <div style="margin:auto;">
         <button type="button" id= 'downbutton' class="btn"
-        onclick="changelayer('down',getcurrentlayer(),'student_1','student1');">
+        onclick="changelayer('down',getcookie('currentlayer'),'student_1','student1');">
           <img id='downarrow' src="../assets/downArrow.png"  style="display:none;">
         </button>
       </div>
