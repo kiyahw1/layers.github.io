@@ -23,8 +23,7 @@ getTab('student2layer2','color2','Layer2'); //Loads Student 2 Tab
 getTab('student3layer1','student_3','Layer1'); //Loads Student 3 Tab
 getTab('student3layer2','color3','Layer2'); //Loads Student 3 Tab
 setlayer('Layer2_Home');
-c.pull();" 
-style="background-size: 100%;">
+c.pull();">
 
     <!--Main Title-->
   <div class= "container-fluid">
@@ -35,11 +34,11 @@ style="background-size: 100%;">
       <!--Subject Card Tab-->
       <div class="col-md-10">
         <button type="button" class="btn p-0" onclick= "window.location.href='subjectCard.html'; 
-        let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
+        c.write();">
           <img id= 'subject' src="#" style="width: 250px;">
         </button>
         <button type="button" class="btn p-0" onclick= "window.location.href='response1.html'; 
-        let c = new Cookie('Layer2_Home', 'Layer2Response'); c.write();">
+        c.write();">
           <img id= 'subject' src="../assets/tabs/Layer1Response.png" style="width: 250px;">
         </button>
       </div>

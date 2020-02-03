@@ -7,26 +7,42 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../sass/style.css" />
   <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
-  <script src='layer3.js'></script>
+  <script src='../scripts/tabs.js'></script>
+  <script src="../scripts/cookies.js"></script>
+  <script src='../scripts/navigation.js'></script>
+  <script>
+    let c = new Cookie('Layer3_Home', 'Layer3Response');
+  </script>
 </head>
 
-<body onload="getSubjectTab(); getStudentTabs(); getResponse();" style='background-size: 100%;'>
+<body onload="getTab('subject','subject','Tab'); //Loads Subject Tab
+getTab('student1layer1','student_1','Layer1'); //Loads Student 1 Tab
+getTab('student1layer2','color1','Layer2'); //Loads Student 1 Tab
+getTab('student1layer3','color1','Layer3'); //Loads Student 1 Tab
+getTab('student2layer1','student_2','Layer1'); //Loads Student 2 Tab
+getTab('student2layer2','color2','Layer2'); //Loads Student 2 Tab
+getTab('student2layer3','color3','Layer3'); //Loads Student 3 Tab
+getTab('student3layer1','student_3','Layer1'); //Loads Student 3 Tab
+getTab('student3layer2','color3','Layer2'); //Loads Student 3 Tab
+getTab('student3layer3','color3','Layer3'); //Loads Student 3 Tab
+setlayer('Layer3_Home');
+c.pull();">
 
     <!--Main Title-->
   <div class= "container-fluid">
     <div class="row justify-content-left">
-      <div class="col-lg-2 mt-1 justify-content-left p-3">
+      <div class="col-md-2 mt-1 justify-content-left p-3">
         <h2 id="Title">Layer 3</h2>
       </div>
       <!--Subject Card Tab-->
-      <div class="col-lg-10" style="margin-top: 38px">
-        <button type="button" class="btn" onclick= "window.location.href='subjectCard.html'; responseCookie();">
+      <div class="col-md-10" style="margin-top: 38px">
+        <button type="button" class="btn" onclick= "window.location.href='subjectCard.html'; c.write()">
           <img id= 'subject' src="#" style="width: 250px;">
         </button>
-        <button type="button" class="btn" onclick= "window.location.href='response1.html'; responseCookie();">
+        <button type="button" class="btn" onclick= "window.location.href='response1.html';c.write()">
           <img id= 'subject' src="../assets/tabs/Layer1Response.png" style="width: 250px;">
         </button>
-        <button type="button" class="btn" onclick= "window.location.href='response2.html'; responseCookie();">
+        <button type="button" class="btn" onclick= "window.location.href='response2.html'; c.write();">
             <img id= 'subject' src="../assets/tabs/Layer2Response.png" style="width: 250px;">
           </button>
       </div>
@@ -35,44 +51,53 @@
 
     <!--Student Card Tabs-->
     <div class="row justify-content-left">
-      <div class="col-lg-2 container">
+      <div class="col-md-2 container px-0">
         <div class="row"> <!--Student 1-->
-          <button type="button" class="btn" onclick="window.location.href='student1Layer3.html'; responseCookie();">
+          <button type="button" class="btn pr-0 border-0" 
+          onclick="window.location.href='student1layer3.html'; c.write();">
             <img src="#" id= "student1layer1" style="height:200px;">
           </button>
-          <button type="button" class="btn" onclick="window.location.href='student1Layer3.html'; responseCookie();">
+          <button type="button" class="btn p-0 border-0" 
+          onclick="window.location.href='student1layer3.html'; c.write();">
             <img src="#" id= "student1layer2" style="height:200px;">
           </button>
-          <button type="button" class="btn" onclick="window.location.href='student1Layer3.html'; responseCookie();">
+          <button type="button" class="btn p-0 border-0" 
+          onclick="window.location.href='student1layer3.html'; c.write();">
             <img src="#" id= "student1layer3" style="height:200px;">
           </button>
         </div>
         <div class="row"> <!--Student 2-->
-          <button type="button" class="btn" onclick="window.location.href='student2Layer3.html';responseCookie();">
+          <button type="button" class="btn pr-0 border-0" 
+          onclick="window.location.href='student2layer3.html';c.write();">
             <img src="#" style="height:200px" id="student2layer1">
           </button>
-          <button type="button" class="btn" onclick="window.location.href='student2Layer3.html'; responseCookie();">
+          <button type="button" class="btn p-0 border-0" 
+          onclick="window.location.href='student2layer3.html'; c.write();">
             <img src="#" id= "student2layer2" style="height:200px;">
           </button>
-          <button type="button" class="btn" onclick="window.location.href='student2Layer3.html'; responseCookie();">
+          <button type="button" class="btn p-0 border-0" 
+          onclick="window.location.href='student2layer3.html'; c.write();">
             <img src="#" id= "student2layer3" style="height:200px;">
           </button>
         </div>
         <div class="row"> <!--Student 3-->
-          <button type="button" class="btn" onclick="window.location.href='student3Layer3.html'; responseCookie();">
+          <button type="button" class="btn pr-0 border-0" 
+          onclick="window.location.href='student3layer3.html'; c.write();">
             <img src="#" style="height:200px" id=student3layer1>
           </button>
-          <button type="button" class="btn" onclick="window.location.href='student3Layer3.html'; responseCookie();">
+          <button type="button" class="btn p-0 border-0" 
+          onclick="window.location.href='student3layer3.html'; c.write();">
             <img src="#" id= "student3layer2" style="height:200px;">
           </button>   
-          <button type="button" class="btn" onclick="window.location.href='student3Layer3.html'; responseCookie();">
+          <button type="button" class="btn p-0 border-0" 
+          onclick="window.location.href='student3layer3.html'; c.write();">
             <img src="#" id= "student3layer3" style="height:200px;">
           </button>        
         </div>
       </div>
         
-    <!--Layer 1 Instructions-->
-      <div class= "col-lg-10 container">
+    <!--Layer 3 Instructions-->
+      <div class= "col-md-10 container">
         <p>
             A few more weeks pass by, and you receive an email from the school counselor, informing you about what’s been going on in your students’ home and community lives. 
             The email contains the content on Layer 3 of your Students’ cards. 
@@ -83,25 +108,19 @@
         <!--Enact Question 1 Response-->
         <form > 
           <div class="form-group justify-content-end">
-            <label for="Layer1Response">Type your Layer 3 response here</label>
+            <label for="Layer3Response">Type your Layer 3 response here</label>
             <textarea class="form-control" id="Layer3Response" rows="18"></textarea>
           </div>
         </form>
         
         <!--Next Button-->
         <div class ="row justify-content-end pr-3">
-        <button type ="button" class="btn" onclick="responseCookie(); window.location.href='reflect1.html'">
-          <img src="../assets/Arrow.png" style="width:100px;">
+        <button type ="button" class="btn" onclick="c.write(); window.location.href='reflect1.html'">
+          <img src="../assets/Arrow.png">
         </button>
     </div>
       </div>
     </div>
 
-    
-
-    <!--Footer-->
-    <footer class="fixed-bottom pl-3">
-        <p>Layers was made by the Teaching Systems Lab at the Massachusetts Institute of Technology</p>
-    </footer>
 </body>
 </html>
