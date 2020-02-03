@@ -41,7 +41,7 @@ function changelayer(direction,current,student,id){
         document.getElementById(id).src="../assets/StudentCards/Layer"+num+'_'+c.substring(name.length, c.length);
     }
     }
-    alert(currentlayer)
+    alert('boo')
     
 }
 
