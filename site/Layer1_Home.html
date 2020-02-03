@@ -16,6 +16,7 @@
 getTab('student1layer1','student_1','Layer1'); //Loads Student 1 Tab
 getTab('student2layer1','student_2','Layer1'); //Loads Student 2 Tab
 getTab('student3layer1','student_3','Layer1'); //Loads Student 3 Tab
+setlayer('Layer1_Home');
 let c = new Cookie('Layer1_Home', 'Layer1Response'); c.pull();" 
 style="background-size: 100%;">
  
@@ -76,7 +77,7 @@ style="background-size: 100%;">
         <div class ="row justify-content-end mb-1">
           <button type ="button" class="btn btnasset" 
           onclick="let c = new Cookie('Layer1_Home', 'Layer1Response'); c.write(); 
-          window.location.href='Layer2_Home.html'; setlayer('Layer2_Home');">
+          window.location.href='Layer2_Home.html';">
             <img class="arrow" src="../assets/Arrow.png">
           </button>
         </div>
