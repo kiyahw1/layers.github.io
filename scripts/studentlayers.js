@@ -19,13 +19,15 @@ function changelayer(direction,current,student,id){
             currentlayer+=1;
             document.getElementById('downarrow').style.display='none';
             document.getElementById('downbutton').style.display='none';
-            document.getElementById('uparrow').style.display='block';
+            document.getElementById('uparrow').style.display='inline';
+            document.getElementById('upbutton').style.display='inline'
 
             }else{
             currentlayer-=1
             document.getElementById('uparrow').style.display='none';
             document.getElementById('upbutton').style.display='none';
-            document.getElementById('downarrow').style.display='block';
+            document.getElementById('downarrow').style.display='inline';
+            document.getElementById('downbutton').style.display='inline';
         }
     }
     var name = student + "=";
@@ -47,7 +49,7 @@ function changelayer(direction,current,student,id){
 
 function displayarrows(current){
     if(current=='Layer2_Home' || current=='Layer3_Home'){
-        document.getElementById('downarrow').style.display='block';
+        document.getElementById('downarrow').style.display='inline';
     alert(current)
     }
 }
