@@ -66,13 +66,10 @@ function changelayer(direction,current,student,id){
         document.getElementById(id).src="../assets/StudentCards/Layer"+num+'_'+c.substring(name.length, c.length);
     }
     }
-    alert(currentlayer,direction)
-    
 }
 
 function displayarrows(current){
     if(current=='Layer2_Home' || current=='Layer3_Home'){
         document.getElementById('downarrow').style.display='inline';
-    alert(current)
     }
 }

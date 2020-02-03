@@ -8,7 +8,6 @@ function navigation(layer){
             c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-            alert('pulled');
             window.location.assign(c.substring(name.length, c.length)+'.html');
         }
     }
@@ -17,5 +16,4 @@ function navigation(layer){
 function setlayer(layer){;
     let cookievalue = layer + ";";
     document.cookie = 'currentlayer' + '=' + cookievalue +"; path/";
-    alert(cookievalue)
 }
