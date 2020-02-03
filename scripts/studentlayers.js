@@ -18,16 +18,14 @@ function changelayer(direction,current,student,id){
         if (direction=='down'){
             currentlayer+=1;
             document.getElementById('downarrow').style.display='none';
-            document.getElementById('downbutton').disable=true;
+            document.getElementById('downbutton').style.display='none';
             document.getElementById('uparrow').style.display='block';
-            document.getElementById('upbutton').disable=false;
 
             }else{
             currentlayer-=1
             document.getElementById('uparrow').style.display='none';
-            document.getElementById('upbutton').disable=true;
+            document.getElementById('upbutton').style.display='none';
             document.getElementById('downarrow').style.display='block';
-            document.getElementById('downbutton').disable=false;
         }
     }
     var name = student + "=";
