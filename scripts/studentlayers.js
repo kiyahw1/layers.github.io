@@ -20,7 +20,7 @@ function changelayer(direction,current,student,id){
             document.getElementById('downarrow').style.display='none';
             document.getElementById('downbutton').style.display='none';
             document.getElementById('uparrow').style.display='inline';
-            document.getElementById('upbutton').style.display='inline'
+            document.getElementById('upbutton').style.display='inline';
 
             }else{
             currentlayer-=1
@@ -29,6 +29,18 @@ function changelayer(direction,current,student,id){
             document.getElementById('downarrow').style.display='inline';
             document.getElementById('downbutton').style.display='inline';
         }
+    }else if(current=='Layer3_Home' ){
+        if(direction=='down'&&currentlayer==1){
+            currentlayer+=1;
+            document.getElementById('uparrow').style.display='inline';
+            document.getElementById('upbutton').style.display='inline';
+        }else if(direction=='down'&&currentlayer==2){
+            document.getElementById('downarrow').style.display='none';
+            document.getElementById('downbutton').style.display='none';
+            document.getElementById('uparrow').style.display='inline';
+            document.getElementById('upbutton').style.display='inline';
+        }
+
     }
     var name = student + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -47,9 +59,7 @@ function changelayer(direction,current,student,id){
     
 }
 
-function displayarrows(current){
-    if(current=='Layer2_Home' || current=='Layer3_Home'){
-        document.getElementById('downarrow').style.display='inline';
-    alert(current)
-    }
+function displayarrows(current,layer,student,id){
+    currentlayer=layer
+    changelayer('down',current,student,id)
 }
