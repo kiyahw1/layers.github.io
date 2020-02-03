@@ -23,8 +23,6 @@ class Cookie {
         let response=document.getElementById(this.id).value;
         let cookievalue = response + ";";
         document.cookie = this.name + '=' + cookievalue +"; path/";
-        alert(cookievalue)
-        
         }
     
     pullhtml = () => {
