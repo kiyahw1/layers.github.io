@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>Welcome to Layers!</title>
+  <meta charset = "UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../sass/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap" rel="stylesheet">
+  <script src="../scripts/cookies.js"></script>
+  <script src="../scripts/navigation.js"></script>
+  <script src="../scripts/studentlayers.js"></script>
+  <script>
+    let currentlayer= 1;
+    let c = new Cookie(getcookie('currentlayer'),'Response');
+  </script>
+</head>
+
+<body onload="getStudent('student_2','student2'); displayarrows(getcookie('currentlayer'));
+c.pull();" 
+style='background-size: 100%;'>
+
+  <!--Student Card-->
+  <div class="row container-fluid mt-1 ml-0 p-3">
+    <div class="col-md-3">
+      <img src="#" id="student1" style="height: 600px">
+    </div>
+
+  <!--Navigation Arrows-->
+    <div class="col-md-1 justify-content-center">
+      <div style="margin-bottom: auto; margin-top: auto;">
+        <button type="button" id='upbutton' class="btn"  
+        onclick="changelayer('up',getcookie('currentlayer'),'student_2','student2');">
+          <img id='uparrow' src="../assets/upArrow.png" style="display:none">
+        </button>
+      </div>
+      <div style="margin:auto;">
+        <button type="button" id= 'downbutton' class="btn"
+        onclick="changelayer('down',getcookie('currentlayer'),'student_2','student2');">
+          <img id='downarrow' src="../assets/downArrow.png"  style="display:none;">
+        </button>
+      </div>
+    </div>
+
+    <!--Enact Question 1 Response-->
+    <div class="col-md-8">
+        <div class="form-group">
+          <label for="Layer3Response">Type your response here</label>
+          <textarea class="form-control" id="Response" rows="20"  ></textarea>
+        </div>
+      </form>
+
+    </div>
+  </div>
+ 
+  <!--Back Arrow-->
+  <div class="row justify-content-left pl-3 ml-0 mb-2">
+      <button type="button" class="btn" onclick="navigation('currentlayer');
+      c.write();">
+        <img class="arrow" id='subjectNext' src="../assets/backArrow.png">
+      </button>
+    </div>
+
+</body>
+</html>
