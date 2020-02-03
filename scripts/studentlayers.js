@@ -59,7 +59,9 @@ function changelayer(direction,current,student,id){
     
 }
 
-function displayarrows(current,layer,student,id){
-    currentlayer=layer
-    changelayer('down',current,student,id)
+function displayarrows(current){
+    if(current=='Layer2_Home' || current=='Layer3_Home'){
+        document.getElementById('downarrow').style.display='inline';
+    alert(current)
+    }
 }
