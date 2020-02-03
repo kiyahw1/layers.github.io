@@ -35,8 +35,18 @@ function changelayer(direction,current,student,id){
             document.getElementById('uparrow').style.display='inline';
             document.getElementById('upbutton').style.display='inline';
         }else if(direction=='down'&&currentlayer==2){
+            currentlayer+=1
             document.getElementById('downarrow').style.display='none';
             document.getElementById('downbutton').style.display='none';
+            document.getElementById('uparrow').style.display='inline';
+            document.getElementById('upbutton').style.display='inline';
+        } else if(direction=='up'&&currentlayer==2){
+            currentlayer-=1
+            document.getElementById('uparrow').style.display='none';
+            document.getElementById('upbutton').style.display='none';
+            document.getElementById('downarrow').style.display='inline';
+            document.getElementById('downbutton').style.display='inline';
+        }else if (direction=='up'&&currentlayer==3){
             document.getElementById('uparrow').style.display='inline';
             document.getElementById('upbutton').style.display='inline';
         }
