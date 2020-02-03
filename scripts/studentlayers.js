@@ -47,6 +47,7 @@ function changelayer(direction,current,student,id){
             document.getElementById('downarrow').style.display='inline';
             document.getElementById('downbutton').style.display='inline';
         }else if (direction=='up'&&currentlayer==3){
+            currentlayer-=1
             document.getElementById('uparrow').style.display='inline';
             document.getElementById('upbutton').style.display='inline';
         }
